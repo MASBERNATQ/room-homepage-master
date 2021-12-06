@@ -9,10 +9,12 @@
 
     <!-- Link -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href=./assets/css/normalize.css" media="screen">
-    <link rel="stylesheet" href=./assets/css/style.css" media="screen">
-    <link rel="stylesheet" href=./assets/css/tablet.css" media="screen and (max-width: 1300px)">
-    <link rel="stylesheet" href=./assets/css/mobile.css" media="screen and (max-width: 950px)">
+    <link rel="stylesheet" href="./assets/css/normalize.css" media="screen">
+    <link rel="stylesheet" href="./assets/css/icons.css" media="screen">
+    <link rel="stylesheet" href="./assets/css/slick.css" media="screen">
+    <link rel="stylesheet" href="./assets/css/style.css" media="screen">
+    <link rel="stylesheet" href="./assets/css/tablet.css" media="screen and (max-width: 1440px)">
+    <link rel="stylesheet" href="./assets/css/mobile.css" media="screen and (max-width: 375px)">
 
     <!-- Title -->
     <title>Frontend Mentor | Room homepage</title>
@@ -24,9 +26,9 @@
     <!-- Header -->
     <header class="header">
       <nav class="header_nav">
-        <ul>
+        <ul class="header_nav_list">
           <li class="header_nav_item">
-            <a href="#">
+            <a href="#" class="img--contain">
               <img src="./images/logo.svg" alt="Logo Room" />
             </a>
           </li>
@@ -36,17 +38,17 @@
             </a>
           </li>
           <li class="header_nav_item">
-            <a href="#">
+            <a href="https://www.instagram.com/quentinmasbernat" target="_blank" rel="noopener">
               Shop
             </a>
           </li>
           <li class="header_nav_item">
-            <a href="#">
+            <a href="https://www.quentinmasbernat.fr/wp-content/uploads/cv-quentin-masbernat.pdf" target="_blank" rel="noopener">
               About
             </a>
           </li>
           <li class="header_nav_item">
-            <a href="#">
+            <a href="https://www.quentinmasbernat.fr/contact/" target="_blank" rel="noopener">
               Contact
             </a>
           </li>
@@ -61,7 +63,28 @@
 
       <!-- First section -->
       <section class="section" id="carousel">
-        <div class="section_content" id="carousel-for"></div>
+
+        <!-- Carousel For -->
+        <div class="section_content">
+          <div id="carousel-for">
+            <div class="section_content_item img--cover">
+              <img src="./images/mobile-image-hero-1.jpg" alt="Chaise et bonsai">
+            </div>
+            <div class="section_content_item img--cover">
+              <img src="./images/mobile-image-hero-2.jpg" alt="3 chaises">
+            </div>
+            <div class="section_content_item img--cover">
+              <img src="./images/mobile-image-hero-3.jpg" alt="Une chaise noire">
+            </div>
+          </div>
+          <div class="navigation-carousel">
+            <button class="button button-black" id="carousel-prev"><i class="icon-angle-left"></i></button>
+            <button class="button button-black" id="carousel-next"><i class="icon-angle-right"></i></button>
+          </div>
+        </div>
+        <!-- END Carousel For -->
+
+        <!-- Carousel Nav -->
         <div class="section_content" id="carousel-nav">
 
           <!-- Item 1 -->
@@ -73,7 +96,7 @@
               own style with our collection and make your property a reflection of you and what you love.
             </p>
             <a href="#" class="link">
-              Shop now
+              Shop now <i class="icon-arrow"></i>
             </a>
           </article>
           <!-- END Item 1 -->
@@ -87,7 +110,7 @@
               store locator. Any questions? Don't hesitate to contact us today.
             </p>
             <a href="#" class="link">
-              Shop now
+              Shop now <i class="icon-arrow"></i>
             </a>
           </article>
           <!-- END Item 2 -->
@@ -102,20 +125,24 @@
               experience in this industry, we understand what customers want for their home and office.
             </p>
             <a href="#" class="link">
-              Shop now
+              Shop now <i class="icon-arrow"></i>
             </a>
           </article>
           <!-- END Item 3 -->
 
         </div>
+        <!-- END Carousel Nav -->
+
       </section>
       <!-- END First section -->
 
       <!-- Second section -->
-      <section class="section">
-        <div class="section_content"></div>
+      <footer class="section" id="footer">
+        <div class="section_content img--cover">
+          <img src="./images/image-about-dark.jpg" alt="Chaise noire">
+        </div>
         <div class="section_content">
-          <h3 class="title title--h3">About our furniture</h3>
+          <h4 class="title title--h4">About our furniture</h4>
           <p>
             Our multifunctional collection blends design and function to suit your individual taste.
             Make each room unique, or pick a cohesive theme that best express your interests and what
@@ -123,12 +150,19 @@
             or anything in between. Product specialists are available to help you create your dream space.
           </p>
         </div>
-        <div class="section_content"></div>
-      </section>
+        <div class="section_content img--cover">
+          <img src="./images/image-about-light.jpg" alt="Chaise blanche">
+        </div>
+      </footer>
       <!-- END Second section -->
 
     </main>
     <!-- END Main -->
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
 
   </body>
 
