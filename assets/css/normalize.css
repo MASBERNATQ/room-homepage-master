@@ -6,6 +6,22 @@
  *    user zoom.
  */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font: inherit;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  text-align: inherit;
+}
+
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
