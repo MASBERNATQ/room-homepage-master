@@ -1,69 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
   <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
+    <meta name="author" content="Quentin MASBERNAT">
 
+    <!-- Link -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href=./assets/css/normalize.css" media="screen">
+    <link rel="stylesheet" href=./assets/css/style.css" media="screen">
+    <link rel="stylesheet" href=./assets/css/tablet.css" media="screen and (max-width: 1300px)">
+    <link rel="stylesheet" href=./assets/css/mobile.css" media="screen and (max-width: 950px)">
 
+    <!-- Title -->
     <title>Frontend Mentor | Room homepage</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
 
   <body>
-    Home
-    Shop
-    About
-    Contact
 
-    Discover innovative ways to decorate
+    <!-- Header -->
+    <header class="header">
+      <nav class="header_nav">
+        <ul>
+          <li class="header_nav_item">
+            <a href="#">
+              <img src="./images/logo.svg" alt="Logo Room" />
+            </a>
+          </li>
+          <li class="header_nav_item">
+            <a href="#">
+              Home
+            </a>
+          </li>
+          <li class="header_nav_item">
+            <a href="#">
+              Shop
+            </a>
+          </li>
+          <li class="header_nav_item">
+            <a href="#">
+              About
+            </a>
+          </li>
+          <li class="header_nav_item">
+            <a href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      </nav>
+    </header>
+    <!-- END Header -->
 
-    We provide unmatched quality, comfort, and style for property owners across the country.
-    Our experts combine form and function in bringing your vision to life. Create a room in your
-    own style with our collection and make your property a reflection of you and what you love.
+    <!-- Main -->
+    <main class="container">
 
-    Shop now
+      <!-- First section -->
+      <section class="section" id="carousel">
+        <div class="section_content" id="carousel-for"></div>
+        <div class="section_content" id="carousel-nav">
 
-    We are available all across the globe
+          <!-- Item 1 -->
+          <article class="section_content_item">
+            <h1 class="title title--h1">Discover innovative ways to decorate</h1>
+            <p>
+              We provide unmatched quality, comfort, and style for property owners across the country.
+              Our experts combine form and function in bringing your vision to life. Create a room in your
+              own style with our collection and make your property a reflection of you and what you love.
+            </p>
+            <a href="#" class="link">
+              Shop now
+            </a>
+          </article>
+          <!-- END Item 1 -->
 
-    With stores all over the world, it's easy for you to find furniture for your home or place of business.
-    Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
-    store locator. Any questions? Don't hesitate to contact us today.
+          <!-- Item 2 -->
+          <article class="section_content_item">
+            <h2 class="title title--h1">We are available all across the globe</h2>
+            <p>
+              With stores all over the world, it's easy for you to find furniture for your home or place of business.
+              Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+              store locator. Any questions? Don't hesitate to contact us today.
+            </p>
+            <a href="#" class="link">
+              Shop now
+            </a>
+          </article>
+          <!-- END Item 2 -->
 
-    Shop now
+          <!-- Item 3 -->
+          <article class="section_content_item">
+            <h2 class="title title--h1">Manufactured with the best materials</h2>
+            <p>
+              Our modern furniture store provide a high level of quality. Our company has invested in advanced
+              technology
+              to ensure that every product is made as perfect and as consistent as possible. With three decades of
+              experience in this industry, we understand what customers want for their home and office.
+            </p>
+            <a href="#" class="link">
+              Shop now
+            </a>
+          </article>
+          <!-- END Item 3 -->
 
-    Manufactured with the best materials
+        </div>
+      </section>
+      <!-- END First section -->
 
-    Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
-    to ensure that every product is made as perfect and as consistent as possible. With three decades of
-    experience in this industry, we understand what customers want for their home and office.
+      <!-- Second section -->
+      <section class="section">
+        <div class="section_content"></div>
+        <div class="section_content">
+          <h3 class="title title--h3">About our furniture</h3>
+          <p>
+            Our multifunctional collection blends design and function to suit your individual taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space.
+          </p>
+        </div>
+        <div class="section_content"></div>
+      </section>
+      <!-- END Second section -->
 
-    Shop now
+    </main>
+    <!-- END Main -->
 
-    About our furniture
-
-    Our multifunctional collection blends design and function to suit your individual taste.
-    Make each room unique, or pick a cohesive theme that best express your interests and what
-    inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-    or anything in between. Product specialists are available to help you create your dream space.
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
   </body>
 
 </html>
