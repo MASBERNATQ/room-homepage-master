@@ -181,13 +181,13 @@ CAROUSEL
 }
 
 #carousel .section_content:first-of-type {
-  width: 55%;
+  width: 60%;
   position: relative;
 }
 
 #carousel .section_content:last-of-type {
-  width: calc(100% - 55%);
-  padding: 120px 100px;
+  width: calc(100% - 60%);
+  padding: 100px;
 }
 
 #carousel .section_content:last-of-type .section_content_item {
