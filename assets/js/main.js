@@ -23,3 +23,11 @@ $("#carousel-nav").slick({
   focusOnSelect: true,
   draggable: false,
 });
+
+/* -------------------
+MENU
+------------------- */
+$("#button-open-menu, #button-close-menu").on("click", function (e) {
+  $("body").toggleClass("menu--is-open");
+  $("#menu").toggleClass("is--open");
+});
