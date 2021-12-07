@@ -9,7 +9,7 @@ $("#carousel-for").slick({
   prevArrow: "#carousel-prev",
   nextArrow: "#carousel-next",
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 10000,
 });
 
 $("#carousel-nav").slick({
